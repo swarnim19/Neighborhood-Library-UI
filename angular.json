@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "projects": {
+    "neighborhood-library-ui": {
+      "projectType": "application",
+      "architect": {
+        "build": {
+          "options": {
+            "outputPath": "dist/neighborhood-library-ui",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "tsConfig": "tsconfig.app.json"
+          }
+        },
+        "serve": {
+          "options": {
+            "browserTarget": "neighborhood-library-ui:build"
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "neighborhood-library-ui"
+}
